@@ -1,0 +1,101 @@
+/* Background */
+body {
+    margin: 0;
+    background-image: url('bg.png');
+    background-repeat: repeat;
+    background-size: auto;
+    font-family: 'Courier New', monospace;
+    color: white;
+}
+
+/* HERO FULL SCREEN */
+.hero {
+    height: 100vh;           /* Full screen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-title {
+    height: 80vh;            /* Gambar memenuhi 80% layar */
+    width: auto;
+    object-fit: contain;
+}
+
+/* TEAM SECTION */
+.team-section {
+    padding: 40px 0;
+}
+
+.team-container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.foto {
+    width: 100%;
+    border-radius: 10px;
+    position: relative;
+    display: block;
+}
+
+.foto-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.7); /* overlay 70% */
+    border-radius: 10px;
+    pointer-events: none;
+}
+
+/* RETRO CARD */
+.retro-card {
+    width: 250px;
+    padding: 20px;
+    background: rgba(20, 20, 20, 0.85);
+    border: 3px solid #ff00ff;
+    box-shadow: 0 0 20px #ff00ff;
+    border-radius: 12px;
+    text-align: center;
+    transition: 0.3s ease;
+    opacity: 0.7;
+    margin: 20px;
+}
+
+/* POP-UP ANIMATION (hidden first) */
+.hidden {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.7s ease-out;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Hover glow */
+.retro-card:hover {
+    box-shadow: 0 0 30px #00eaff, 0 0 50px #ff00ff;
+    transform: translateY(-8px);
+}
+
+/* Foto */
+.foto {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 15px magenta;
+}
+
+/* Nama */
+.nama {
+    font-size: 22px;
+    margin-top: 12px;
+    color: #00eaff;
+}
+
+/* NIM */
+.nim {
+    font-size: 18px;
+    color: #ff9cff;
+}
